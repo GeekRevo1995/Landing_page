@@ -1,0 +1,653 @@
+
+/***************
+ Load Page
+***************/
+
+.load_overlow
+{
+    background-color:#D35400;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+}
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 250px auto;
+    
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: white;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+
+
+/************************
+      HEADER 
+*************************/
+
+#background-img
+{
+    background-image: url(../img/Winter-Snow-And-Happy-Girl-1366x768.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    width: 100%;
+    height: 660px;
+    opacity: 0.5;
+}
+
+
+#myNavbar
+{
+    float: right;
+    position: relative;
+    top: 45px;
+    right: 50px;
+    list-style: none;
+    background-color: transparent;
+}
+
+.navbar-brand 
+{
+    float: left;
+    color: wheat;
+    height: 50px;
+    font-size: 30px;
+    line-height: 20px;
+    letter-spacing: 0.3em;
+    position: relative;
+    top: 70px;
+    left: 100px;
+    bottom: 200px;
+}
+
+.nav-1 li a
+{ 
+    color: white;
+    position: relative;
+    display:inline-block;
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 3;
+    text-decoration: none;
+}
+.nav-1 li 
+{
+    display:inline-block;
+    padding: 20px;
+}
+.nav-1 li a:hover 
+{
+    opacity: 1;
+    color: white;
+}
+
+
+#banner-mobile 
+{
+    float: right;
+     position: relative;
+    bottom: 400px;
+    left: 100px;
+}
+#intro 
+{
+   float: left;
+    position: relative;
+    top: 200px;
+    width: 60%;
+    line-height:4.5em;
+    left: 100px;
+    
+}
+.row 
+{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+#intro > p
+{
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 32px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+}
+#intro > b
+{
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+#intro > h4
+{
+    font-size: 24px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-top: 25px;
+}
+
+.inline-cta {
+    margin-top: 30px;
+    padding: 20px 0;
+}
+.inline-cta li {
+    display: inline-block;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+
+.home-works__device .home-works__device_1
+{
+    position: absolute;
+    right: -222px;
+    width: 200px;
+    height: 300px;
+}
+.home-works__iphone-video_1 {
+    background: url(../img/t_konvene_1x.jpg) no-repeat;}
+
+.home-works__iphone-video_1 > video {
+    position: absolute;
+    top: 0;
+    left: 77px;
+    width: 200px;
+    height: 500px;
+    margin-top: 80px;
+    z-index: 1;
+}
+.home-works__iphone {
+    background: url(../img/iPhone6w_1x.png) no-repeat;
+    background-size:220px 500px;
+    width: 220px;
+    height: 500px;
+    margin-top: 80px;
+    position: absolute;
+    left: 70px;
+    z-index: 2;
+}
+.home-works__device-screen_1 {
+    display: none;
+}
+
+.home-areas__device_adp-phone {
+    width: 230px;
+    height: 400px;
+    position: relative;
+    top: 190px;
+    right: 80px;
+    background: url(../img/adp-phone.png) no-repeat;
+    background-size: 100% 100%;
+}
+.home-areas__device_adp-watch {
+    width: 121px;
+    height: 231px;
+    background: url(../img/adp-watch.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 360px;
+    right: 78px;
+}
+
+/***************
+ section 2
+****************/
+
+.jmb1
+{height: 100px; margin: 0 auto;}
+
+.owl-item 
+{
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+    bottom: 33px;
+    left: 95px;
+}
+
+#para1
+{
+    position:relative;
+    left: 100px;
+    top: 120px;
+    z-index: 10;
+}
+
+#para1 h3
+{
+    font-weight: 400;
+    font-size: 3em;
+    padding-bottom: 15px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    font-family: NHaasGroteskDSPro-65Md,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+#para1 p
+{
+    color: #888;
+    margin: 0 0 25px;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 14px;
+}
+ #para1 button 
+{
+    margin-top: 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    border-color:  #007ee5;
+}
+
+ #para1 button:hover    
+{background-color:#007ee5 ; color: white}
+
+
+.smack_iphone img
+{
+    position: absolute;
+    left: 110px;
+    top: 50px;
+}
+
+.home-areas__device_sony {
+    width: 300px;
+    height: 600px;
+    background: url(../img/sony-phone.png) no-repeat;
+    background-size: 100%;
+    z-index: 4;
+}
+.home-areas__device_sony {
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    overflow: hidden;
+}
+
+.home-areas__device_sony-screen video {
+    position: absolute;
+    left: 10px;
+    top: 65px;
+    width: 280px;
+    height: 450px;
+    z-index: 3;
+}
+#para2
+{
+    position:relative;
+    left: 250px;
+    top: 350px;
+}
+#para2 h3
+{
+    font-weight: 400;
+    font-size: 3em;
+    padding-bottom: 15px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    font-family: NHaasGroteskDSPro-65Md,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+#para2 p
+{
+    color: #888;
+    margin: 0 0 25px;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+#para2 button 
+{
+    margin-top: 15px;
+    font-weight: 500;
+    border-radius: 3px;
+    border-color:  #007ee5;
+}
+
+ #para2 button:hover
+{background-color: #007ee5 ; color: white}
+
+	
+    /*-- =========================
+   SECTION 3
+============================== */
+
+#section3
+{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: #f4f5f7;
+    padding: 50px;
+    height: 100%;
+    top: 500px;
+}
+.dark-text 
+{
+    color: #272727;
+    font-size: 3.125rem;
+    line-height: 4.063rem;
+     font-family: 'Lane', sans-serif;
+    font-weight: normal;
+}
+
+.colored-line
+{
+    height: 1px;
+    color: #007ee5;
+    width: 165px;
+    margin: 0 auto;
+    border: 1px solid  #007ee5;
+    margin-top: 12px;
+}
+.section-description
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-top: 18px;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.feature
+{margin-top: 60px}
+
+.features-right
+{
+   position: relative;
+}
+.feature-right 
+{
+   margin-top:63px;
+}
+
+.features .feature .icon-container {
+    display: block;
+    min-height: 100px;
+    margin-top: 5px;
+    float: right;
+    margin-left: 20px;
+}
+
+.features .feature-right .icon-container-right {
+    min-height: 100px;
+    margin-right: 10px;
+    float: left;
+}
+
+.main-color {
+    color: #008ed6;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.fetaure-details p {
+    line-height: 2em;
+    color: #888;
+    font-size: 14px;
+}
+
+.icon {
+    border: 1.5px solid #008ed6;
+    color: #008ed6;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    bottom: 20px;
+}
+.icon i
+{
+    position: relative;
+    top: 17px;
+    color: #008ed6;
+    font-size: 18px;
+}
+
+.phone-image
+{
+    margin-top: 40px;
+}
+.phone-image img
+{
+   width: 220px;
+    height: 450px;
+}
+
+ /*--
+			================================
+			== BEGIN HOW IT WORKS SECTION ==
+			================================
+ --*/
+
+.container-full
+{
+    width: 100%;
+    position: relative;
+    top: 500px; 
+    height: 58%;
+    overflow: hidden;
+}
+.container-full .row {
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+}
+ul.how-it-works-col li {
+    float: left;
+    padding: 60px 0;
+}
+
+.how-it-works-title
+{
+   position: absolute;
+    left: 100px;
+}
+
+.title-work{
+   margin-top: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.how-it-works-info {
+    position: relative;
+    padding: 80px 8% 40px;
+    width: 100%;
+    bottom: 60px;
+    background: rgba(34, 34, 34, 0.7);
+    visibility: hidden;
+}
+@keyframes info
+{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.how-it-works-info h4
+{
+    text-align: center;
+     position: relative;
+     bottom: 35px;
+     font-size: 25px;
+     color: white;
+     top: 20px;
+}
+@keyframes h4 
+{
+    from { top :20px;}
+    to {top: -44px;}
+}
+.how-it-works-info p 
+{
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 15px;
+    color: white;
+    font-family: "Varela Round", sans-serif; 
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+@keyframes p 
+{
+    from { top :20px;}
+    to {top: -22px;}
+}
+.arrow
+{
+    position: relative;
+    background-image: url(../img/arrow.png);
+    left: 150px;
+    top: 60px;
+    width: 200px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+@keyframes arrow 
+{
+    from { top :60px;}
+    to {top: 10px;}
+}
+
+ul.how-it-works-col li:hover .how-it-works-info {
+    visibility: visible;
+    animation: info .5s;
+}
+
+ul.how-it-works-col li:hover .how-it-works-info h4
+{
+    animation: h4 .5s ;
+    animation-fill-mode: forwards;
+}
+ul.how-it-works-col li:hover .how-it-works-info .arrow
+{
+    animation: arrow .3s ;
+    animation-fill-mode: forwards;
+}
+ul.how-it-works-col li:hover .how-it-works-info p
+{
+    animation: p .7s ;
+    animation-fill-mode: forwards;
+}
+
+
+ul.how-it-works-col li:first-child:hover {
+ background-image: url(../img/stock1.jpg) ;
+   background-position:bottom;
+    background-repeat: no-repeat;
+}
+ul.how-it-works-col li:nth-child(2):hover {
+ background-image: url(../img/stock2.jpg) ;
+   background-position:bottom;
+    background-repeat: no-repeat;
+}
+ul.how-it-works-col li:nth-child(3):hover {
+ background-image: url(../img/stock3.jpg) ;
+   background-position:bottom;
+    background-repeat: no-repeat;
+}
+ul.how-it-works-col li:first-child:hover .how-it-works-title
+{
+    visibility: hidden;
+}
+ul.how-it-works-col li:nth-child(2):hover .how-it-works-title
+{
+    visibility: hidden;
+}
+ul.how-it-works-col li:nth-child(3):hover .how-it-works-title
+{
+    visibility: hidden;
+}
+
+/*****************
+BUTTON WELL CONTENT STYLE 
+*************************/
+
+#btn-doc
+{
+    text-align: center;
+    width: 160px;
+    border-radius: 9px;
+    margin-top: 20px;
+    transition: width .5s ease;
+}
+a .fa-arrow-right
+{margin-left: 5px;}
+#btn-doc:hover  .fa-arrow-right
+{visibility: visible;
+position: relative;
+    left: 10px;
+}
+
+
+
+
+
